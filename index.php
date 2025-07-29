@@ -15,7 +15,7 @@
 <!-- Navbar -->
 <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Pathfinders</a>
+    <a class="navbar-brand" href="#">African Pathfinders</a>
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -36,7 +36,7 @@
 <section id="hero" class="vh-100 d-flex align-items-center text-white text-center position-relative">
   <div class="hero-bg"></div>
   <div class="container position-relative z-1">
-    <h1 class="display-3 fw-bold">Pathfinders Publishing</h1>
+    <h1 class="display-3 fw-bold">African Pathfinders</h1>
     <p class="lead">Discover books that inspire, educate, and transform.</p>
     <a href="#books" class="btn btn-light mt-3">Browse Books</a>
   </div>
@@ -47,7 +47,7 @@
 <section id="about" class="py-5 bg-light">
   <div class="container text-center">
     <h2>About Us</h2>
-    <p class="lead">Pathfinders is committed to promoting local and international literary voices. We publish, promote, and distribute books that inspire.</p>
+    <p class="lead">Pathfinders is committed to promoting local and international literary voices. We publish, promote, and distribute books that inspire and create mindset change.</p>
   </div>
 </section>
 
