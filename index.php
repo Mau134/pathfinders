@@ -1,9 +1,10 @@
-<?php include('includes/db.php'); include('includes/fetch.php'); ?>
+<?php include('includes/db.php'); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Pathfinders Publishing</title>
+  <title>African Pathfinders</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -13,7 +14,7 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
 
 <!-- Navbar -->
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="container">
     <a class="navbar-brand" href="#">African Pathfinders</a>
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -22,10 +23,10 @@
     <div id="navMenu" class="collapse navbar-collapse">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a href="#hero" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">Authors</a></li>
         <li class="nav-item"><a href="#books" class="nav-link">Books</a></li>
         <li class="nav-item"><a href="#store" class="nav-link">Store</a></li>
-        <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#poetry">Poetry</a></li>
         <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </div>
@@ -43,13 +44,37 @@
 </section>
 
 
-<!-- About Section -->
 <section id="about" class="py-5 bg-light">
-  <div class="container text-center">
-    <h2>About Us</h2>
-    <p class="lead">Pathfinders is committed to promoting local and international literary voices. We publish, promote, and distribute books that inspire and create mindset change.</p>
+  <div class="container">
+    <h2 class="text-center mb-5">Authors</h2>
+
+    <div class="row align-items-center">
+      <!-- CEO Image -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="assets/images/Bright Molande.jpg" 
+     alt="Dr Bright Molande" 
+     class="shadow" 
+     style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover;">
+
+      </div>
+
+      <!-- CEO Info -->
+      <div class="col-md-8">
+        <h3 class="mb-3">Bright Molande</h3>
+        <p>
+          Bright Molande lectures in Literature at the University of Malawi, after earning his Masters and Doctorate at the University of Essex. 
+          He is a published poet, with some poetry discussed in academic circles in Africa and the US. Now he returns 
+          with a conscience-probing pen rewriting memories and voices. Pain finds pleasure in the sublime of tragedy
+        </p>
+        <p>
+This poetry demonstrates well-versed creativity, high imagination and deep agony but delivered in pleasures of intertextuality, poetics of repetition, 
+rewriting mythology and at times reinventing poetic form. This is a new voice of African poetry, sublime imagination soothing beyond the agony of tragic lamentations. 
+It's poetry that comes once in a generation.        </p>
+      </div>
+    </div>
   </div>
 </section>
+
 
 <!-- Books Section -->
 <section id="books" class="py-5">
@@ -74,7 +99,7 @@
 <!-- Store Section -->
 <section id="store" class="py-5 bg-light">
   <div class="container">
-    <h2 class="text-center mb-4">Buy Books</h2>
+    <h2 class="text-center mb-4">Store</h2>
     <div class="row g-4">
       <?php foreach (getBooks() as $book): ?>
       <div class="col-md-4">
@@ -92,21 +117,60 @@
   </div>
 </section>
 
-<!-- Blog Section -->
-<section id="blog" class="py-5">
+<section id="poetry" class="py-5 bg-light">
   <div class="container">
-    <h2 class="text-center mb-4">Blog & News</h2>
-    <?php foreach (getPosts() as $post): ?>
-    <div class="card mb-3">
-      <div class="card-body">
-        <h5><?= $post['title'] ?></h5>
-        <p><?= nl2br($post['content']) ?></p>
-        <p class="text-muted small">Posted on <?= date("F j, Y", strtotime($post['created_at'])) ?></p>
+    <h2 class="text-center mb-5">Poetry</h2>
+    <div class="row g-4">
+      
+      <!-- Poetry Card 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Whispers of Ink</h5>
+            <p class="card-text">
+              In pages worn and stories old,  
+              Our words take root, our thoughts unfold.  
+              The poet’s hand, both bold and kind,  
+              Weaves tales of heart and soul and mind.
+            </p>
+          </div>
+        </div>
       </div>
+
+      <!-- Poetry Card 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Bound in Verse</h5>
+            <p class="card-text">
+              Between each rhyme, a truth is found,  
+              Soft echoes carried, sound to sound.  
+              Let poetry be the voice we lend,  
+              To every dream we dare defend.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Poetry Card 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Echoes of Thought</h5>
+            <p class="card-text">
+              Beneath the stars, within the night,  
+              Our musings drift on winds of light.  
+              A poet's pen, a soulful guide,  
+              To where our hopes and fears reside.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
-    <?php endforeach; ?>
   </div>
 </section>
+
 
 <!-- Contact Section -->
 <section id="contact" class="py-5 bg-light">
@@ -162,5 +226,17 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Add .scrolled class to navbar on scroll
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+      navbar.classList.add("scrolled");
+    } else {
+      navbar.classList.remove("scrolled");
+    }
+  });
+</script>
+
 </body>
 </html>
