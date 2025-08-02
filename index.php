@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>html { scroll-behavior: smooth; }</style>
 
 </head>
@@ -196,7 +198,7 @@ It's poetry that comes once in a generation.        </p>
   <div class="container text-center text-md-start">
     <div class="row">
       <div class="col-md-4 mb-3">
-        <h5>Pathfinders Publishing</h5>
+        <h5>African Pathfinders</h5>
         <p>Your trusted source for books that inspire, educate, and entertain.</p>
       </div>
       <div class="col-md-4 mb-3">

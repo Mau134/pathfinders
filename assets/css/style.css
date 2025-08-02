@@ -114,3 +114,16 @@ footer .row > div {
     margin-bottom: 0.5rem;
   }
 }
+@media (max-width: 576px) {
+  h1, h2, h3 {
+    font-size: 90%;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
