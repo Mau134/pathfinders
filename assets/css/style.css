@@ -127,3 +127,107 @@ footer .row > div {
     font-size: 0.9rem;
   }
 }
+/* Target the scroll container */
+#poetryScroll > .d-flex {
+  overflow-x: scroll;
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+#poetryScroll > .d-flex::-webkit-scrollbar {
+  display: none;
+}
+
+.poetry-text {
+  height: 600px; /* Set desired fixed height for poem area */
+  overflow: hidden; /* Or use scroll for long poems: overflow: auto; */
+  text-overflow: ellipsis;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+}
+.poem-text {
+  max-height: 6em; /* show about 4 lines */
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.poem-text.collapsed {
+  max-height: 6em;
+}
+
+.poem-text:not(.collapsed) {
+  max-height: 1500px; /* large enough for full content */
+}
+button.read-more-btn.btn.btn-link {
+  color: #0d6efd;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 14px;
+  border-radius: 30px;
+  background-color: #e7f1ff;
+  box-shadow: 0 2px 6px rgba(13, 110, 253, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+  text-decoration: none !important; /* remove underline */
+  user-select: none;
+  outline: none;
+}
+
+button.read-more-btn.btn.btn-link:hover,
+button.read-more-btn.btn.btn-link:focus {
+  background-color: #0d6efd;
+  color: white;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.6);
+  transform: scale(1.05);
+  text-decoration: none !important; /* remove underline on hover */
+}
+
+button.read-more-btn.btn.btn-link:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(13, 110, 253, 0.4);
+}
+.read-more-btn {
+  color: #0d6efd;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 14px;
+  border-radius: 30px;
+  background-color: #e7f1ff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(13, 110, 253, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  user-select: none;
+  outline: none;
+  display: inline-block;
+  margin-top: auto;
+  align-self: start;
+}
+
+.read-more-btn:hover,
+.read-more-btn:focus {
+  background-color: #0d6efd;
+  color: white;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.6);
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+.read-more-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 8px rgba(13, 110, 253, 0.4);
+}
