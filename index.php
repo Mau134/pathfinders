@@ -205,6 +205,8 @@ It's poetry that comes once in a generation.        </p>
 <section id="poetry" class="py-5 bg-light position-relative">
   <div class="container position-relative">
     <h1 class="text-center mb-5">Poetry</h1>
+        <h2 class="text-center mb-5">Selected Poems</h2>
+
         <div class="fade-left"></div>
     <div class="fade-right"></div>
 <button class="scroll-btn left position-absolute top-50 start-0 translate-middle-y btn btn-light shadow" 
@@ -599,7 +601,26 @@ It's poetry that comes once in a generation.        </p>
       They say she always returns to the womb of the mountain<br>
       To renew her youth and rejoin others high at the peak.<br>
       She will return down to earth to sit in the pool again;<br>
-      She always returns when we are gone and lost.  
+      She always returns when we are gone and lost.  <br><br>
+
+      Then comes the sacred ritual of self-sanctification:<br>
+Water in a forgotten potsherd of ancient rainmakers;<br>
+I wash my face and feet in the procession of death,<br>
+I anoint my feet and face in the procession of rebirth,<br>
+And proceed up the holy grove for the next vision. <br><br>
+
+Aloft, sky borne,<br>
+The poet descends from secret vestries of the mountain;<br>
+Returning from the peak where no mortals dare trespass. <br>
+He ascended like a White tourist in ridiculous trappings, <br>
+He descended in a loincloth carrying rock tablets scripted. <br><br> 
+
+This is the poet who spoke of secret mysteries beyond:<br>
+All rivers meet at the peak, all enemies greet at the peak,<br>
+Life and death shake hands where death is rebirth.<br>
+He carried his soul on his shoulders and left for Sapitwa.<br><br>
+
+
     </p>
 <button class="read-more-btn">Read More</button>
   </div>
