@@ -42,6 +42,12 @@ html {
   height: 300px;
   object-fit: cover;
 }
+.card-img-top {
+  width: 100%;        /* take full width of the card */
+  height: auto;       /* scale height proportionally */
+  object-fit: contain; /* show full image without cropping */
+}
+
 /* Make nav links white and add spacing */
 .navbar-nav .nav-link {
   color: #fff !important;
@@ -57,6 +63,15 @@ html {
   text-decoration: underline;
 }
 
+.poem-text {
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  max-height: 150px; /* height when collapsed */
+}
+
+.poem-text.expanded {
+  max-height: 2000px; /* big enough to fit full poem */
+}
 
 #poetry .card {
   border-radius: 1rem;
@@ -230,4 +245,33 @@ button.read-more-btn.btn.btn-link:active {
 .read-more-btn:active {
   transform: scale(0.95);
   box-shadow: 0 2px 8px rgba(13, 110, 253, 0.4);
+}
+.book-img {
+  width: 100%;
+  height: auto;       /* let the image scale naturally */
+  object-fit: cover; /* ensure full image is visible */
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .book-img {
+    height: 100vw; /* full width as height to keep aspect ratio */
+    max-height: 400px; /* optional max height */
+  }
+}
+/* Fixed height for long poems */
+.long-poem {
+  max-height: 400px; /* adjust as needed */
+  overflow-y: auto;
+  padding-right: 8px; /* to prevent scrollbar from overlapping text */
+}
+
+/* Optional: hide scrollbar in some browsers but still scrollable */
+.long-poem::-webkit-scrollbar {
+  width: 6px;
+}
+
+.long-poem::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 3px;
 }

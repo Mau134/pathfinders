@@ -124,7 +124,7 @@
 
 <section id="about" class="py-5 bg-light">
   <div class="container">
-    <h2 class="text-center mb-5">Authors</h2>
+    <h1 class="text-center mb-5">Authors</h1>
 
     <div class="row align-items-center">
       <!-- CEO Image -->
@@ -153,18 +153,19 @@ It's poetry that comes once in a generation.        </p>
   </div>
 </section>
 
-
 <!-- Books Section -->
 <section id="books" class="py-5">
   <div class="container">
-    <h2 class="text-center mb-4">Our Books</h2>
+    <h1 class="text-center mb-4">Our Books</h1>
     <div class="row g-4">
       <?php foreach (getBooks() as $book): ?>
-      <div class="col-md-4">
+      <div class="col-md-4 col-12">
         <div class="card h-100">
-<img src="assets/images/<?= $book['cover_image'] ?>" class="card-img-top img-fluid" style="object-fit: cover; height: 300px;" alt="<?= $book['title'] ?>">
-        <div class="card-body d-flex flex-column">
-
+          <img src="assets/images/<?= $book['cover_image'] ?>" 
+    class="card-img-top" 
+    alt="<?= $book['title'] ?>" 
+    style="height: 600px; object-fit: cover; width: 100%;">
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title"><?= $book['title'] ?></h5>
             <p class="card-text"><?= $book['author'] ?></p>
           </div>
@@ -178,14 +179,17 @@ It's poetry that comes once in a generation.        </p>
 <!-- Store Section -->
 <section id="store" class="py-5 bg-light">
   <div class="container">
-    <h2 class="text-center mb-4">Store</h2>
+    <h1 class="text-center mb-4">Store</h1>
     <div class="row g-4">
       <?php foreach (getBooks() as $book): ?>
-      <div class="col-md-4">
+      <div class="col-md-4 col-12">
         <div class="card h-100">
-          <img src="assets/images/<?= $book['cover_image'] ?>" class="card-img-top">
-        <div class="card-body d-flex flex-column">
-
+          <img src="assets/images/<?= $book['cover_image'] ?>" 
+     class="card-img-top" 
+     alt="<?= $book['title'] ?>"
+      style="height: 600px; object-fit: cover; width: 100%;">
+     
+          <div class="card-body d-flex flex-column">
             <h5 class="card-title"><?= $book['title'] ?></h5>
             <p>Price: MWK <?= number_format($book['price'], 2) ?></p>
             <button class="btn btn-success w-100">Add to Cart</button>
@@ -197,9 +201,10 @@ It's poetry that comes once in a generation.        </p>
   </div>
 </section>
 
+
 <section id="poetry" class="py-5 bg-light position-relative">
   <div class="container position-relative">
-    <h2 class="text-center mb-5">Poetry</h2>
+    <h1 class="text-center mb-5">Poetry</h1>
         <div class="fade-left"></div>
     <div class="fade-right"></div>
 <button class="scroll-btn left position-absolute top-50 start-0 translate-middle-y btn btn-light shadow" 
@@ -217,7 +222,7 @@ It's poetry that comes once in a generation.        </p>
 <div class="card shadow-sm border-0 flex-shrink-0" style="min-width: 300px; max-width: 90vw;">
   <div class="card-body d-flex flex-column">
     <h5 class="card-title">Poetics of Repetition</h5>
-    <h4 class="card-title">Bright Molande</h4>
+    <h8 class="card-title">Bright Molande</h8>
     <p class="card-text poem-text collapsed">
       Repetition is the grammar of poetics<br>
       Rewriting the poetics of repetition;<br><br>
@@ -234,8 +239,8 @@ It's poetry that comes once in a generation.        </p>
 <div class="card shadow-sm border-0 flex-shrink-0" style="min-width: 300px; max-width: 90vw;">
   <div class="card-body d-flex flex-column">
     <h5 class="card-title">Allegory of the Beginning</h5>
-    <h5 class="card-title fst-italic">(After Ted Hughes)</h5>
-    <h4 class="card-title">Bright Molande</h4>
+    <h8 class="card-title fst-italic">(After Ted Hughes)</h8>
+    <h8 class="card-title">Bright Molande</h8>
     <p class="card-text poem-text collapsed">
       When God flooded the Earth and flattened mountains,<br>
       Crow descended from heaven all white in holy robes.<br>
@@ -296,8 +301,8 @@ It's poetry that comes once in a generation.        </p>
 <div class="card shadow-sm border-0 flex-shrink-0" style="min-width: 300px; max-width: 90vw;">
   <div class="card-body d-flex flex-column">
     <h5 class="card-title">Chameleon’s Turn</h5>
-    <h4 class="card-title">Bright Molande</h4>
-    <p class="card-text poem-text collapsed">
+    <h8 class="card-title">Bright Molande</h8>
+    <p class="card-text poem-text long-poem collapsed">
       In the beginning was the Chameleon, and <br>
       The Chameleon was with the Supreme God <br>
       He was with the Creator in the beginning. <br>
@@ -359,7 +364,7 @@ It's poetry that comes once in a generation.        </p>
 <div class="card shadow-sm border-0 flex-shrink-0" style="min-width: 300px; max-width: 90vw;">
   <div class="card-body d-flex flex-column">
     <h5 class="card-title">Humility</h5>
-    <h4 class="card-title">Bright Molande</h4>
+    <h8 class="card-title">Bright Molande</h8>
     <p class="card-text poem-text collapsed">
       There is greatness that lies in humility:<br>
       Even a king will bow before a barber.<br><br>
@@ -388,7 +393,7 @@ It's poetry that comes once in a generation.        </p>
 <div class="card shadow-sm border-0 flex-shrink-0" style="min-width: 300px; max-width: 90vw;">
   <div class="card-body d-flex flex-column">
     <h5 class="card-title">She Thought She Was All Divine</h5>
-    <h4 class="card-title">Bright Molande</h4>
+    <h8 class="card-title">Bright Molande</h8>
     <p class="card-text poem-text collapsed">
       Wedded to heavens beyond lofty stars,<br>
       She was a trailing blaze of the seasons:<br>
@@ -432,7 +437,7 @@ It's poetry that comes once in a generation.        </p>
 <div class="card shadow-sm border-0 flex-shrink-0" style="min-width: 300px; max-width: 90vw;">
   <div class="card-body d-flex flex-column">
     <h5 class="card-title">Birth of a Cyclone</h5>
-    <h4 class="card-title">Bright Molande</h4>
+    <h8 class="card-title">Bright Molande</h8>
     <p class="card-text poem-text collapsed">
       The sun came out to survey the sea below,<br>
       The wind came along in a gentle breeze,<br>
@@ -466,8 +471,8 @@ It's poetry that comes once in a generation.        </p>
 <div class="card shadow-sm border-0 flex-shrink-0" style="min-width: 300px; max-width: 90vw;">
   <div class="card-body d-flex flex-column">
     <h5 class="card-title">Stories of the Dead</h5>
-    <h6 class="card-subtitle mb-2 text-muted">(On trying to speak for the dead after the Cyclone)</h6>
-    <h4 class="card-title">Bright Molande</h4>
+    <h8 class="card-subtitle mb-2 text-muted">(On trying to speak for the dead after the Cyclone)</h8>
+    <h8 class="card-title">Bright Molande</h8>
     <p class="card-text poem-text collapsed">
       The dead never tell their story<br>
       Who are we to tell how they died?<br><br>
@@ -493,8 +498,8 @@ It's poetry that comes once in a generation.        </p>
 <div class="card shadow-sm border-0 flex-shrink-0" style="min-width: 300px; max-width: 90vw;">
   <div class="card-body d-flex flex-column">
     <h5 class="card-title">African Sestina</h5>
-    <h5 class="card-title fst-italic">(After Adam LeFevre)</h5>
-    <h4 class="card-title">Bright Molande</h4>
+    <h8 class="card-title fst-italic">(After Adam LeFevre)</h8>
+    <h8 class="card-title">Bright Molande</h8>
     <p class="card-text poem-text collapsed">
       This poem is a hungry monster.<br>
       Repetition wants something else every time. Six<br>
@@ -530,7 +535,7 @@ It's poetry that comes once in a generation.        </p>
 <div class="card shadow-sm border-0 flex-shrink-0" style="min-width: 300px; max-width: 90vw;">
   <div class="card-body d-flex flex-column">
     <h5 class="card-title">God is a Poet</h5>
-    <h4 class="card-title">Bright Molande</h4>
+    <h8 class="card-title">Bright Molande</h8>
     <p class="card-text poem-text collapsed">
       I will marry a woman <br>
       And call her Sestina <br>
@@ -566,7 +571,7 @@ It's poetry that comes once in a generation.        </p>
 <div class="card shadow-sm border-0 flex-shrink-0" style="min-width: 300px; max-width: 90vw;">
   <div class="card-body d-flex flex-column">
     <h5 class="card-title">Waiting for My Turn</h5>
-    <h4 class="card-title">Bright Molande</h4>
+    <h8 class="card-title">Bright Molande</h8>
     <p class="card-text poem-text collapsed">
       Time has done its time; time has done its time; <br>
       My knees creak with sinister intimations of mortality<br>
@@ -609,7 +614,7 @@ It's poetry that comes once in a generation.        </p>
 <!-- Contact Section -->
 <section id="contact" class="py-5 bg-light">
   <div class="container">
-    <h2 class="text-center mb-4">Contact Us</h2>
+    <h1 class="text-center mb-4">Contact Us</h1>
     <form method="post" action="contact_process.php" class="mx-auto" style="max-width: 600px;">
       <div class="mb-3">
         <input name="name" class="form-control" placeholder="Your Name" required>
@@ -709,6 +714,14 @@ document.querySelectorAll('.read-more-btn').forEach(button => {
     button.textContent = isCollapsed ? 'Read More' : 'Read Less';
   });
 });
+document.querySelectorAll('.read-more-btn').forEach(button => {
+  button.addEventListener('click', () => {
+    const poem = button.previousElementSibling; // the <p> before button
+    poem.classList.toggle('expanded');
+    button.textContent = poem.classList.contains('expanded') ? 'Read Less' : 'Read More';
+  });
+});
+
 
 
 </script> 
