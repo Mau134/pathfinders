@@ -227,7 +227,7 @@ It's poetry that comes once in a generation.        </p>
     <h8 class="card-title">Bright Molande</h8>
     <p class="card-text poem-text collapsed">
       Repetition is the grammar of poetics<br>
-      Rewriting the poetics of repetition;<br><br>
+      Rewriting is the poetics of repetition;<br><br>
       Creation is the art of eternal repetition<br>
       Repeating repetition in endless variation;<br><br>
       No wonder God is the Poet of repetition<br>
