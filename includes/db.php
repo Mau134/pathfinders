@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "eqbxjwte_pathfinders", "", "");
+$mysqli = new mysqli("localhost", "eqbxjwte_pathfinders", "efmdC%RmdxGI2", "eqbxjwte_pathfinders");
 if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);
 }
